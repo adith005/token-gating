@@ -1,7 +1,10 @@
 from memory.history_db import retrieve_similar
 from rag.retriever import retrieve
+<<<<<<< HEAD
 import re
 from collections import Counter
+=======
+>>>>>>> 07dbd231591e9d8949116c306e72c9c24b85e74d
 
 def gate(query, memory_weight=0.6, doc_weight=0.4, top_k=5):
     mem_results = retrieve_similar(query, k=top_k)
@@ -17,6 +20,7 @@ def gate(query, memory_weight=0.6, doc_weight=0.4, top_k=5):
     # Simple heuristic scoring and sort
     merged.sort(key=lambda x: x["score"], reverse=True)
     return [m["text"] for m in merged[:top_k]]
+<<<<<<< HEAD
 
 def apply_stepwise_gating(prompt_text, keep_ratio=0.7):
     words = prompt_text.split()
@@ -69,3 +73,5 @@ def apply_token_budget_gating(prompt_text, budget=64, scoring="hybrid"):
         return " ".join([w for w, _ in selected])
     else:
         raise ValueError(f"Unknown scoring method: {scoring}")
+=======
+>>>>>>> 07dbd231591e9d8949116c306e72c9c24b85e74d

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 streamlit==1.33.0
 pandas==2.2.1
 numpy==1.26.4
@@ -14,3 +15,12 @@ scikit-learn==1.4.2
 gdown==5.2.0
 python-dotenv==1.0.1
 psutil==5.9.8
+=======
+redis
+sentence-transformers
+numpy
+PyPDF2
+openai
+mcp
+tiktoken
+>>>>>>> 07dbd231591e9d8949116c306e72c9c24b85e74d

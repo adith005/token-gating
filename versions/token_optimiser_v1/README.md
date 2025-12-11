@@ -12,11 +12,3 @@ Multi-source context engine integrating Redis memory (MCP) + RAG + Token Gating.
    python rag/document_ingestor.py path/to/your.pdf
 5. Start main:
    python main.py
-<<<<<<< HEAD
-
-## Running the Frontend
-1. Make sure you have completed the setup steps above.
-2. Run the Streamlit application:
-   streamlit run Frontend/frontend.py
-=======
->>>>>>> 07dbd231591e9d8949116c306e72c9c24b85e74d
