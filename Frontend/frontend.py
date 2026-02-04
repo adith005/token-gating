@@ -77,4 +77,3 @@ if user_input:
     except RuntimeError:
         loop = asyncio.get_event_loop()
         loop.run_until_complete(run_comparison(user_input, gated_output, non_gated_output, results_gated, results_non_gated))
-
